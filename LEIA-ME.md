@@ -1,61 +1,76 @@
 # Pixel Santo
 
-Site do catálogo de santos modernos, gerado a partir da sua base do Notion.
+Guia passo a passo. Você não precisa saber programar nem usar terminal.
 
-Você edita tudo no Notion. O site se atualiza a partir de lá.
-
----
-
-## Como funciona
-
-```
-    Notion (sua base "S A N T O S")
-              │
-              ▼
-        build.py  ← lê o Notion, baixa as fotos
-              │
-              ▼
-     site/  (index.html + img/)
-              │
-              ▼
-     Netlify  →  seu site no ar
-```
-
-O arquivo `template.html` é o design. O `build.py` preenche o design com os
-dados do Notion. Você nunca precisa mexer nesses dois para trocar conteúdo,
-só no Notion.
+Tudo o que você vai fazer é **clicar duas vezes em arquivos** e **copiar e colar
+uma chave**.
 
 ---
 
-## Parte 1. Dar acesso do Notion ao site
+# Passo 1. Pegar a chave do Notion
 
-Isso é feito uma vez só.
+Isso é feito uma vez só na vida. Essa chave é o que deixa o site ler seu Notion.
 
-1. Abra https://www.notion.so/my-integrations e clique em **New integration**.
-2. Dê o nome `Pixel Santo`, escolha seu workspace e salve.
-3. Copie a chave que aparece (começa com `ntn_` ou `secret_`).
-   **Guarde num lugar seguro, tipo seu gerenciador de senhas. Essa chave dá
-   acesso ao seu Notion, então não mande por e-mail nem cole em conversa.**
-4. Abra a página **Pixel Santo** no Notion, clique nos `...` do canto superior
-   direito, vá em **Conexões** (ou *Connections*) e adicione a integração
-   `Pixel Santo`. Sem esse passo o site recebe erro 404.
+**1.1** Abra este endereço no navegador:
+https://www.notion.so/my-integrations
+
+**1.2** Clique no botão escuro **New integration**.
+
+**1.3** Preencha:
+- Em *Name*, escreva: `Pixel Santo`
+- Em *Associated workspace*, escolha seu workspace
+- Clique em **Save**
+
+**1.4** Na tela que abrir, procure o campo **Internal Integration Secret**.
+Clique em **Show** e depois em **Copy**.
+
+Você acabou de copiar a chave. Ela é um texto comprido que começa com `ntn_`.
+
+> ⚠️ Essa chave dá acesso ao seu Notion. Não mande ela por e-mail, não cole em
+> conversa com ninguém, nem aqui comigo. Você vai colar ela só numa janelinha do
+> seu próprio Mac, no Passo 2.
+
+**1.5** Agora falta liberar a página para essa integração. Sem isso não funciona.
+
+- Abra a página **Pixel Santo** no Notion
+- No canto superior direito, clique nos três pontinhos `•••`
+- Procure **Conexões** (ou *Connections*)
+- Clique em **Pixel Santo** para conectar
+- Se aparecer uma confirmação, confirme
 
 ---
 
-## Parte 2. Gerar o site no seu computador
+# Passo 2. Gerar o site
 
-No Terminal:
+**2.1** Abra a pasta `pixel-santo`. Ela está na sua pasta de usuário.
+Para chegar nela: abra o **Finder**, aperte as teclas `Command + Shift + H`
+(isso abre sua pasta pessoal), e entre na pasta **pixel-santo**.
 
-```bash
-cd ~/pixel-santo
-export NOTION_TOKEN='cole_sua_chave_aqui'
-python3 build.py
-```
+**2.2** Dentro dela, dê **dois cliques** no arquivo:
 
-O `export` vale só para aquela janela do Terminal. Se fechar e abrir de novo,
-precisa repetir.
+### 📄 `Gerar site.command`
 
-Ao terminar ele mostra um resumo assim:
+**2.3** Vai abrir uma **janela preta com letras**. Isso é normal, não é erro.
+Essa janela é o computador trabalhando. Não feche ela.
+
+> Se o Mac disser que *"não pode abrir porque é de um desenvolvedor não
+> identificado"*: clique com o **botão direito** no arquivo, escolha **Abrir**,
+> e depois **Abrir** de novo na confirmação. Só precisa fazer isso na primeira vez.
+
+**2.4** Vai aparecer uma janelinha pedindo a chave. **Cole a chave** que você
+copiou no Passo 1.4 e clique em **Continuar**.
+
+A chave fica guardada no Chaveiro do seu Mac. **Nas próximas vezes ele não vai
+mais perguntar.**
+
+**2.5** Agora espere. Ele vai baixar as fotos uma por uma, então pode levar
+alguns minutos. Na janela preta vão aparecer os nomes dos santos sendo
+processados.
+
+**2.6** Quando terminar, aparece uma mensagem dizendo **Pronto** e a pasta
+`site` abre sozinha na tela.
+
+Na janela preta, no final, tem um resumo assim:
 
 ```
   santos no site .......... 84
@@ -65,69 +80,100 @@ Ao terminar ele mostra um resumo assim:
   sem local para o mapa ... 84
 ```
 
-E lista os nomes que estão faltando alguma coisa. Use essa lista como
-checklist do que preencher no Notion.
+E embaixo, a lista de quais santos estão faltando o quê. **Esse é seu checklist
+do que preencher no Notion.**
 
 ---
 
-## Parte 3. Colocar no ar
+# Passo 3. Ver o site no seu computador
 
-A primeira vez, do jeito mais simples e sem instalar nada:
+Antes de publicar, veja se ficou bom.
 
-1. Entre em https://app.netlify.com/drop
-2. Arraste a pasta `site` (que o build.py criou) para dentro da página.
-3. Pronto, o site está no ar num endereço tipo `algo-aleatorio.netlify.app`.
-4. Em **Site configuration > Change site name** você troca por
-   `pixel-santo.netlify.app`.
+Dentro da pasta `site` que abriu, dê **dois cliques** no arquivo
+**`index.html`**. Ele abre no seu navegador, funcionando de verdade, com as
+fotos e os mapas.
 
-Para atualizar depois: rode o `build.py` de novo e arraste a pasta `site`
-novamente. Substitui o que estava lá.
-
-### Domínio próprio (opcional)
-
-Se quiser `pixelsanto.com.br`, compre em registro.br (por volta de R$ 40 por
-ano) e em **Domain management** no Netlify siga o passo a passo dele para
-apontar. O Netlify já dá o certificado de segurança de graça.
+Nessa etapa o site está só no seu computador. Ninguém mais vê ainda.
 
 ---
 
-## Parte 4. Atualização automática (opcional, depois)
+# Passo 4. Publicar na internet
 
-Enquanto você roda o `build.py` na mão, o site não é automático. Para ele se
-atualizar sozinho a partir do Notion, o caminho é subir esta pasta para o
-GitHub e usar o arquivo `.github/workflows/atualizar.yml` que já está pronto
-aqui. Ele roda o `build.py` todos os dias de manhã e também tem um botão de
-"rodar agora".
+**4.1** Abra este endereço no navegador:
+https://app.netlify.com/drop
 
-Nesse caminho a chave do Notion vai em **Settings > Secrets and variables >
-Actions > New repository secret**, com o nome `NOTION_TOKEN`. Você mesma cola
-ela lá, no site do GitHub. Ela fica escondida, não aparece no código.
+**4.2** Coloque as duas janelas lado a lado: o **Finder** com a pasta `site`
+aberta, e o **navegador** na página do Netlify.
+
+**4.3** Clique na pasta `site` e **arraste ela** com o mouse até o meio da
+página do Netlify, onde está escrito para soltar arquivos. Aí solte.
+
+> **Arrastar** é: apertar o botão do mouse em cima da pasta, manter apertado,
+> mover o mouse até o outro lugar, e só então soltar o botão.
+>
+> Importante: arraste **a pasta `site` inteira**, não os arquivos de dentro dela.
+
+**4.4** Ele vai subir os arquivos e mostrar um endereço tipo
+`nome-aleatorio-123.netlify.app`. **Seu site está no ar.** Esse endereço já
+funciona para qualquer pessoa.
+
+**4.5** Para guardar esse site, o Netlify vai pedir para você criar uma conta.
+É gratuito, dá para entrar com Google.
+
+**4.6** Para trocar o endereço esquisito por algo bonito: em
+**Site configuration > Change site name**, coloque `pixel-santo`. O endereço
+vira `pixel-santo.netlify.app`.
 
 ---
 
-## Colunas do Notion que o site usa
+# Como atualizar depois
 
-| Coluna no Notion        | Onde aparece no site                        |
-|-------------------------|---------------------------------------------|
-| Nome                    | título do cartão                            |
-| Nascimento              | ano no cartão                               |
-| Falecimento             | ano no cartão                               |
-| Nacionalidade           | cartão, com a bandeira do país              |
-| Profissão               | cartão                                      |
-| Status                  | estágio de canonização (as bolinhas)        |
-| Foto                    | imagem do cartão                            |
-| corpo da página         | biografia, ao clicar no santo               |
-| Local de nascimento     | mapa (coluna ainda não existe, ver abaixo)  |
-| Local de sepultamento   | mapa (coluna ainda não existe, ver abaixo)  |
+Sempre que você mexer no Notion (adicionar foto, corrigir biografia, incluir
+santo novo):
 
-### Sobre os mapas
+1. Dois cliques em **`Gerar site.command`** (não vai pedir a chave de novo)
+2. Arraste a pasta `site` para o Netlify de novo, no seu site já criado, em
+   **Deploys**
 
-Os mapas só aparecem quando o local está preenchido. Para isso é preciso criar
-duas colunas de texto na base do Notion, com estes nomes exatos:
+É isso. Duas ações.
+
+---
+
+# Se algo der errado
+
+| O que aparece | O que fazer |
+|---|---|
+| `ERRO 401` | A chave está errada. Dois cliques em `Esquecer a chave.command` e faça o Passo 2 de novo. |
+| `ERRO 404` | Falta conectar a integração na página do Notion. Volte no Passo 1.5. |
+| `sem foto` na lista | Normal. Falta a foto daquele santo no campo **Foto** do Notion. |
+| `sem local para o mapa` | Falta criar as colunas de local. Veja abaixo. |
+| Mac não deixa abrir o arquivo | Botão direito no arquivo, **Abrir**, **Abrir**. |
+
+---
+
+# Sobre os mapas
+
+Os mapas só aparecem quando o local está preenchido no Notion. Para isso
+precisam existir duas colunas de texto na base, com **exatamente** estes nomes:
 
 - `Local de nascimento`
 - `Local de sepultamento`
 
-Preencha com cidade e país, por exemplo `Assis, Itália`. Não precisa de
-endereço nem coordenada. Onde estiver vazio, o site simplesmente não mostra
-mapa, sem quebrar nada.
+Preencha com cidade e país, por exemplo `Assis, Itália`. Não precisa de endereço
+nem de coordenada.
+
+Onde estiver vazio, o site simplesmente não mostra mapa naquele santo. Não
+quebra nada.
+
+---
+
+# O que é cada arquivo desta pasta
+
+| Arquivo | Para que serve |
+|---|---|
+| `Gerar site.command` | **Você usa este.** Gera o site a partir do Notion. |
+| `Esquecer a chave.command` | Use só se precisar trocar a chave do Notion. |
+| `site/` | O site pronto. É esta pasta que vai para o Netlify. |
+| `build.py` | O programa que faz o trabalho. Não precisa mexer. |
+| `template.html` | O design do site. Não precisa mexer. |
+| `LEIA-ME.md` | Este guia. |
