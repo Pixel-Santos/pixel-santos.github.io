@@ -187,7 +187,12 @@ def comprimir(origem, destino):
 def baixar_foto(url, destino):
     """Baixa e comprime a foto. Devolve True se deu certo."""
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "PixelSanto/1.0"})
+        req = urllib.request.Request(url, headers={
+            "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                           "AppleWebKit/537.36 (KHTML, like Gecko) "
+                           "Chrome/124.0.0.0 Safari/537.36"),
+            "Accept": "image/avif,image/webp,image/*,*/*;q=0.8",
+        })
         with urllib.request.urlopen(req, timeout=60) as r:
             bruto = r.read()
     except Exception as e:
