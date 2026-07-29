@@ -648,6 +648,10 @@
     width: 100%;
     aspect-ratio: 3 / 2;
     background: var(--bg-elevated);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: inset 0 1px 0 hsl(0 0% 100% / 0.5), inset 0 -50px 60px -40px hsl(var(--shadow) / 0.2);
   }
 
@@ -669,12 +673,26 @@
     font-style: italic;
   }
 
-  .sheet-photo {
+  .sheet-photo-blur {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: scale(1.2);
+    filter: blur(26px) saturate(0.85);
+    opacity: 0.5;
+  }
+
+  .sheet-photo {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 10px 30px -12px hsl(var(--shadow) / 0.45);
   }
 
   .sheet-close {
@@ -1005,7 +1023,7 @@ document.getElementById("sortSelect").addEventListener("change", (e) => {
 const overlay = document.getElementById("overlay");
 function openSheet(s) {
   document.getElementById("sheetPhoto").innerHTML = s.foto
-    ? `<img class="sheet-photo" src="${s.foto}" alt="${s.nome}">`
+    ? `<img class="sheet-photo-blur" src="${s.foto}" alt="" aria-hidden="true"><img class="sheet-photo" src="${s.foto}" alt="${s.nome}">`
     : `<span class="sheet-initials">${initials(s.nome)}</span><span class="sheet-image-tag">foto em breve</span>`;
   document.getElementById("sheetName").textContent = s.nome;
   document.getElementById("sheetSub").textContent = `${s.nasc} a ${s.fale} · ${s.profissao} · ${flagFor(s.nacionalidade)} ${s.nacionalidade}`;
