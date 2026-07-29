@@ -787,11 +787,11 @@
     <p class="hero-lede">Médicos, estudantes, juízes, presidiários, papas. Pixel Santo reúne histórias de pessoas comuns que a Igreja reconhece como exemplo de fé para o nosso tempo, do lugar onde nasceram até o lugar onde descansam.</p>
     <div class="hero-stats">
       <div>
-        <div class="stat-num" id="statCount">0</div>
+        <div class="stat-num" id="statCount">84</div>
         <div class="stat-label">histórias catalogadas</div>
       </div>
       <div>
-        <div class="stat-num" id="statPaises">0</div>
+        <div class="stat-num" id="statPaises">30</div>
         <div class="stat-label">países de origem</div>
       </div>
       <div>
@@ -849,7 +849,7 @@
 
 <div class="wrap">
   <footer>
-    <!--__FOOTER_NOTE__-->
+    <strong>Catálogo em construção.</strong> Os dados vêm direto do Notion. São 84 santos catalogados, 10 já com foto e 20 já com biografia no site. Quem ainda não tem foto aparece com as iniciais, e quem ainda não tem local de nascimento ou de sepultamento simplesmente não mostra mapa, então o catálogo cresce sem nunca ficar quebrado.
   </footer>
 </div>
 
@@ -872,7 +872,1097 @@
 <script>
 const STATUS_STEPS = ["Servo de Deus", "Venerável", "Beato", "Santo"];
 
-const SAINTS = /*__SAINTS_DATA__*/[];
+const SAINTS = [
+ {
+  "nome": "Akash Bashir",
+  "nasc": 1994,
+  "fale": 2015,
+  "nacionalidade": "Paquistão",
+  "profissao": "Segurança voluntário",
+  "status": "Servo de Deus",
+  "foto": "img/akash-bashir.jpg",
+  "bio": [
+   "Akash nasceu em 22 de junho de 1994, no Paquistão, e estudou na escola técnica salesiana Dom Bosco em Lahore. Era conhecido pela alegria, simplicidade e disposição para ajudar.",
+   "Em 15 de março de 2015, atuava voluntariamente na segurança da porta de uma igreja em Lahore quando percebeu um homem tentando entrar usando um colete de explosivos. Akash o impediu fisicamente de avançar, dizendo \"Vou morrer antes de deixar você entrar\", e o abraçou com força — o homem detonou os explosivos ali mesmo, matando os dois, mas salvando a vida de mais de cem fiéis dentro do templo.",
+   "Tornou-se o primeiro Servo de Deus da história do Paquistão, com processo diocesano encerrado em 2024 — um jovem comum que deu a vida por outros no exato momento em que foi chamado a agir."
+  ],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Albertina Berkenbrock",
+  "nasc": 1919,
+  "fale": 1931,
+  "nacionalidade": "Brasil",
+  "profissao": "Estudante",
+  "status": "Beato",
+  "foto": "",
+  "bio": [
+   "Albertina nasceu em 21 de abril de 1919, em Braço do Norte, Santa Catarina, filha de imigrantes alemães. Era conhecida na comunidade por sua devoção e pureza de vida.",
+   "Em 15 de junho de 1931, aos 12 anos, foi atacada por um homem que tentou violentá-la em uma mata próxima de casa. Ela resistiu até ser assassinada, sendo reconhecida pela Igreja como mártir em defesa da castidade — o que dispensou a exigência de um milagre para sua beatificação, celebrada em 20 de outubro de 2007 em Tubarão (SC), tornando-se a primeira mártir brasileira reconhecida pela Igreja.",
+   "É lembrada como \"a Maria Goretti do Brasil\" e é uma referência para jovens sobre coragem e dignidade diante da violência."
+  ],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "André Bessette",
+  "nasc": 1845,
+  "fale": 1937,
+  "nacionalidade": "Canadá",
+  "profissao": "Religioso / Porteiro",
+  "status": "Santo",
+  "foto": "img/andre-bessette.jpg",
+  "bio": [
+   "Alfred Bessette nasceu em 1845, perto de Montreal, no Canadá, o oitavo de doze filhos de uma família pobre. Órfão de pai e mãe ainda criança, teve saúde frágil a vida toda e pouquíssima escolaridade, passando por vários ofícios sem sucesso antes de ingressar na Congregação da Santa Cruz, em 1870, adotando o nome de Irmão André.",
+   "Por quarenta anos, exerceu a função mais humilde da comunidade: porteiro do Colégio Notre Dame, em Montreal. \"Quando entrei para esta comunidade, os superiores me mostraram a porta e permaneci lá por 40 anos\", brincava. Foi ali, recebendo os visitantes e recomendando a devoção a São José aos doentes que o procuravam, que ganhou fama de milagreiro, título que sempre rejeitou: \"Não sou nada... sou apenas uma ferramenta nas mãos da Providência\".",
+   "Foi o responsável pela construção do Oratório de São José de Montreal, hoje o maior santuário do mundo dedicado ao santo. Morreu em 1937, aos 91 anos, e um milhão de pessoas foi ao seu funeral. Canonizado em 2010 pelo papa Bento XVI, é o primeiro santo nascido no Canadá."
+  ],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Antonietta Meo (Nennolina)",
+  "nasc": 1930,
+  "fale": 1937,
+  "nacionalidade": "Itália",
+  "profissao": "Criança",
+  "status": "Venerável",
+  "foto": "img/antonietta-meo-nennolina.jpg",
+  "bio": [
+   "Antonietta, carinhosamente chamada de \"Nennolina\", nasceu em 15 de dezembro de 1930, em Roma. Aos 5 anos, machucou o joelho e foi diagnosticada com osteossarcoma, câncer ósseo agressivo, que levou à amputação de uma perna.",
+   "Mesmo criança, viveu a doença com serenidade impressionante, escrevendo mais de cem cartinhas a Jesus e a Maria, com reflexões espirituais surpreendentes para sua idade. Faleceu em 3 de julho de 1937, poucos dias antes de completar 7 anos.",
+   "Sua causa levou a Igreja a reconhecer formalmente, em documento de 1981, que também crianças são capazes de virtude heroica. Foi declarada venerável, tornando-se uma das candidatas a santa mais jovens da história e um símbolo de fé em meio ao sofrimento infantil."
+  ],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Augustus Tolton",
+  "nasc": 1854,
+  "fale": 1897,
+  "nacionalidade": "Estados Unidos",
+  "profissao": "Padre",
+  "status": "Venerável",
+  "foto": "img/augustus-tolton.jpg",
+  "bio": [
+   "Augustus nasceu escravizado em 1º de abril de 1854, no Missouri, EUA, e conseguiu a liberdade ainda criança quando sua mãe fugiu com os filhos durante a Guerra Civil Americana. Sentindo o chamado ao sacerdócio, foi recusado por todos os seminários dos EUA por causa da cor da sua pele, e precisou estudar em Roma.",
+   "Foi ordenado em 1886, tornando-se o primeiro padre afro-americano reconhecido publicamente como tal nos Estados Unidos. Enfrentou racismo inclusive de outros religiosos ao longo do ministério, mas construiu uma próspera comunidade paroquial em Chicago. Faleceu em 9 de julho de 1897, aos 43 anos, após um colapso causado por calor extremo.",
+   "Foi declarado venerável em 2019, sendo um símbolo importante de fé e superação diante do racismo."
+  ],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Bernadette Soubirous",
+  "nasc": 1844,
+  "fale": 1879,
+  "nacionalidade": "França",
+  "profissao": "Freira / Enfermeira",
+  "status": "Santo",
+  "foto": "img/bernadette-soubirous.jpg",
+  "bio": [
+   "Tudo o que sabemos das Aparições e da Mensagem de Lourdes nos veio de Santa Bernadette Soubirous. Nasceu em 7 de janeiro de 1844, no Moinho Boly, em Lourdes, primeira filha de François Soubirous e Louise Casterot. As aparições começaram em 11 de fevereiro de 1858, quando Bernadette, buscando lenha às margens do rio Gave, viu uma senhora na gruta de Massabielle. Interrogada por autoridades civis e religiosas, respondia com simplicidade e firmeza incomuns para uma jovem de 14 anos sem instrução, dizendo apenas, \"eu sou a encarregada de contar, não de fazer você acreditar.\"",
+   "Para protegê-la da curiosidade pública, Bernadette foi internada em 1860 no hospício das Irmãs de Nevers, onde finalmente aprendeu a ler e escrever. Discerniu sua vocação e entrou para a congregação, tornando-se Irmã Marie-Bernard. Em Nevers, viveu escondida, dedicada à oração e ao cuidado dos doentes, dizia que suas armas eram a oração e o sacrifício.",
+   "Bernadette morreu em Nevers em 16 de abril de 1879, aos 35 anos. A Igreja a proclamou santa em 8 de dezembro de 1933, não por ter sido favorecida pelas aparições, mas pela forma como respondeu a elas."
+  ],
+  "localNasc": "Lourdes, França",
+  "localRepouso": "Nevers, França"
+ },
+ {
+  "nome": "Carlo Acutis",
+  "nasc": 1991,
+  "fale": 2006,
+  "nacionalidade": "Itália",
+  "profissao": "Estudante / Web Designer",
+  "status": "Santo",
+  "foto": "img/carlo-acutis.jpg",
+  "bio": [
+   "Carlo Acutis nasceu em 3 de maio de 1991, em Londres, filho de pais italianos e foi criado em Milão. Desde jovem, ele demonstrou uma profunda devoção à Eucaristia e uma notável aptidão para programação de computadores. Combinando sua fé e habilidades técnicas, Carlo criou um site catalogando milagres eucarísticos em todo o mundo, com o objetivo de compartilhar seu amor pela Eucaristia com outros. Ele também era conhecido por seus atos de caridade, usando seus recursos para ajudar os sem-teto e os necessitados.",
+   "Em 2006, aos 15 anos, Carlo foi diagnosticado com leucemia. Ele ofereceu seu sofrimento pelo Papa e pela Igreja, expressando o desejo de deixar este mundo para estar com Cristo. Carlo faleceu em 12 de outubro de 2006. Sua beatificação ocorreu em 10 de outubro de 2020, em Assis, Itália, após o reconhecimento de um milagre atribuído à sua intercessão. Um segundo milagre foi confirmado em maio de 2024, levando ao anúncio de que Carlo será canonizado em 27 de abril de 2025, durante o Jubileu dos Adolescentes no Vaticano, tornando-se o primeiro santo millennial.",
+   "O Papa Francisco, na exortação apostólica Christus Vivit, destacou a vida de Carlo e afirmou que ele \"soube usar as novas tecnologias de comunicação para transmitir o Evangelho, para comunicar valores e beleza.\" A capacidade de Carlo de integrar sua fé com a tecnologia moderna serve como inspiração, demonstrando que a santidade é alcançável para os jovens na era digital atual."
+  ],
+  "localNasc": "Londres, Reino Unido",
+  "localRepouso": "Assis, Itália"
+ },
+ {
+  "nome": "Carlos Manuel Rodríguez",
+  "nasc": 1918,
+  "fale": 1963,
+  "nacionalidade": "Porto Rico",
+  "profissao": "Professor",
+  "status": "Beato",
+  "foto": "",
+  "bio": [
+   "Carlos Manuel Rodríguez Santiago foi um leigo porto-riquenho conhecido por sua profunda devoção à fé católica e seus esforços para promover a renovação litúrgica. Nascido em 22 de novembro de 1918, em Caguas, Porto Rico, foi criado em uma família católica devota. Apesar de enfrentar problemas crônicos de saúde durante toda sua vida, manteve-se apaixonado por educar outros sobre a riqueza da liturgia da Igreja, enfatizando a participação ativa na Eucaristia e a importância do Mistério Pascal. Seu amor pela fé o levou a trabalhar na educação católica e na pastoral universitária, inspirando muitos através de seu intelecto e perspicácia espiritual.",
+   "Rodríguez Santiago foi particularmente influente no avanço da compreensão da Vigília Pascal e da importância de celebrá-la em sua forma litúrgica completa, mesmo antes que o Concílio Vaticano II introduzisse reformas generalizadas. Ele compartilhou seu conhecimento através de artigos, palestras e orientação pessoal, fomentando um movimento de jovens católicos comprometidos com uma formação espiritual mais profunda. Apesar de nunca ter se tornado padre, seu trabalho teve um impacto duradouro na Igreja em Porto Rico, e ele era conhecido por sua natureza alegre e humilde e confiança inabalável em Deus, mesmo enquanto lutava contra o câncer.",
+   "Carlos Manuel Rodríguez Santiago faleceu de câncer em 13 de julho de 1963, aos 44 anos. Sua santidade e dedicação à fé foram amplamente reconhecidas, levando à sua beatificação pelo Papa João Paulo II em 29 de abril de 2001, tornando-o o primeiro porto-riquenho e o primeiro leigo nas Américas a ser beatificado. Ele é lembrado por seu amor à liturgia e seu famoso lema, \"Vivemos para aquela noite\", referindo-se à Vigília Pascal, o ponto culminante do ano litúrgico da Igreja."
+  ],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Carmen Hernández",
+  "nasc": 1930,
+  "fale": 2016,
+  "nacionalidade": "Espanha",
+  "profissao": "Missionária",
+  "status": "Servo de Deus",
+  "foto": "img/carmen-hernandez.jpg",
+  "bio": [
+   "A Serva de Deus Carmen Hernández (1930-2016) foi uma missionária espanhola e co-iniciadora do Caminho Neocatecumenal, um movimento dedicado à renovação da vida cristã e evangelização dentro da Igreja Católica. Nascida em Ólvega, Espanha, ela estudou química antes de sentir um profundo chamado ao trabalho missionário. Influenciada pelo Concílio Vaticano II e suas experiências com os pobres, ela cursou estudos teológicos e buscou evangelizar na Índia. No entanto, seu caminho a levou a Madri, onde conheceu Kiko Argüello nos anos 1960, e juntos, fundaram o Caminho Neocatecumenal, uma comunidade focada no aprofundamento da fé através da catequese, liturgia e vida comunitária.",
+   "Carmen teve um papel crucial na formação das bases teológicas e escriturísticas do movimento, enfatizando a importância da Eucaristia e do modelo cristão primitivo de fé. Ela era conhecida por sua profunda espiritualidade, personalidade forte e dedicação inabalável à evangelização. Junto com Kiko, ela ajudou a difundir o Caminho Neocatecumenal mundialmente, fomentando milhares de comunidades que reavivaram a fé nas paróquias e levaram a numerosas vocações sacerdotais e religiosas. O movimento recebeu reconhecimento formal do Vaticano, apoiado por vários papas, incluindo São João Paulo II e Papa Bento XVI.",
+   "Até seu falecimento em 2016, Carmen permaneceu uma figura influente na Igreja Católica, inspirando inúmeras pessoas através de sua fé, sabedoria e compromisso com a difusão do Evangelho. Em 2021, a causa de sua beatificação foi oficialmente aberta."
+  ],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Charles de Foucauld",
+  "nasc": 1858,
+  "fale": 1916,
+  "nacionalidade": "França",
+  "profissao": "Padre / Eremita",
+  "status": "Santo",
+  "foto": "img/charles-de-foucauld.jpg",
+  "bio": [
+   "Charles nasceu em 15 de setembro de 1858, em Estrasburgo, França, em família nobre. Levou uma juventude de luxo e boemia como militar e explorador, até viver uma intensa conversão aos 28 anos, que o levou a se tornar padre e, mais tarde, eremita no deserto da Argélia, entre o povo tuaregue.",
+   "Vivia radicalmente pobre, buscando ser \"o irmão universal\" de todos, independentemente de religião, e dedicou-se ao diálogo com os muçulmanos locais. Foi assassinado em 1º de dezembro de 1916, durante um assalto ao seu eremitério em Tamanrasset.",
+   "Sua espiritualidade de simplicidade e proximidade inspirou dezenas de comunidades religiosas ao longo do século XX. Foi canonizado por Francisco em 15 de maio de 2022."
+  ],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Chiara Badano",
+  "nasc": 1971,
+  "fale": 1990,
+  "nacionalidade": "Itália",
+  "profissao": "Estudante",
+  "status": "Beato",
+  "foto": "img/chiara-badano.jpg",
+  "bio": [
+   "Chiara Badano, carinhosamente conhecida como \"Chiara Luce\", nasceu em 29 de outubro de 1971, em Sassello, Itália. Desde jovem, ela demonstrou uma fé profunda e um espírito generoso, ingressando no Movimento dos Focolares aos nove anos, onde abraçou sua espiritualidade de unidade e amor. Chiara era conhecida por sua personalidade vibrante, atletismo e fortes amizades.",
+   "Aos 17 anos, enquanto jogava tênis, Chiara sentiu uma dor aguda no ombro, o que levou ao diagnóstico de sarcoma osteogênico, um câncer ósseo raro e agressivo. Durante sua doença, ela manteve uma fé inabalável, frequentemente oferecendo seu sofrimento a Jesus e recusando morfina para permanecer lúcida, afirmando: \"Isso reduz minha lucidez, e só há uma coisa que posso fazer agora: oferecer meu sofrimento a Jesus porque quero compartilhar ao máximo seus sofrimentos na cruz.\" Sua aceitação alegre do sofrimento e preocupação com os outros, mesmo em meio à sua dor, inspirou muitos ao seu redor.",
+   "Chiara faleceu em 7 de outubro de 1990, aos 18 anos. Seu processo de beatificação começou em 1999, e ela foi declarada \"Beata\" em 25 de setembro de 2010 pelo Papa Bento XVI. Durante a cerimônia de beatificação, o Cardeal Angelo Amato leu uma mensagem do Papa, destacando o exemplo de Chiara: \"Somente o Amor com 'A' maiúsculo traz verdadeira felicidade.\" A vida de Chiara continua sendo um farol para os jovens, demonstrando que a santidade é alcançável através da fé e do amor cotidianos."
+  ],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Chiara Petrillo",
+  "nasc": 1984,
+  "fale": 2012,
+  "nacionalidade": "Itália",
+  "profissao": "Do lar / Mãe",
+  "status": "Servo de Deus",
+  "foto": "img/chiara-petrillo.jpg",
+  "bio": [
+   "Chiara Corbella Petrillo (1984-2012) foi uma mãe italiana cuja vida exemplificou profunda fé e altruísmo. Nascida em uma família cristã devota, ela conheceu seu marido, Enrico Petrillo, durante uma peregrinação a Medjugorje. Eles se casaram em 2008 e logo depois, Chiara engravidou do primeiro filho. Tragicamente, o bebê foi diagnosticado com uma malformação grave e morreu logo após o nascimento. Apesar deste desgosto, Chiara e Enrico permaneceram abertos à vida e conceberam novamente. Seu segundo filho, David, também foi diagnosticado com uma condição grave e faleceu pouco depois do nascimento.",
+   "Em 2010, Chiara engravidou pela terceira vez, e esta criança, chamada Francesco, nasceu saudável. No entanto, durante sua gravidez, Chiara foi diagnosticada com uma forma grave de câncer. Ela escolheu continuar sua gravidez, dando à luz Francesco em junho de 2011. Chiara faleceu em 13 de junho de 2012, aos 28 anos, apenas seis dias após o nascimento de seu filho.",
+   "A vida e a fé inabalável de Chiara inspiraram muitos. Em 2017, a Diocese de Roma iniciou a fase diocesana de sua causa de beatificação, reconhecendo-a como Serva de Deus. A fase diocesana foi concluída em junho de 2024, e sua causa está agora sob consideração do Vaticano.",
+   "Enrico Petrillo, marido de Chiara, refletiu sobre sua força, afirmando: \"Chiara não era uma mulher corajosa; sua força vinha de outro alguém.\""
+  ],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Clare Crockett",
+  "nasc": 1982,
+  "fale": 2016,
+  "nacionalidade": "Irlanda do Norte",
+  "profissao": "Freira / Atriz",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Clarita Segura",
+  "nasc": 1978,
+  "fale": 1995,
+  "nacionalidade": "Argentina",
+  "profissao": "Estudante",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Cleusa Carolina Rody Coelho",
+  "nasc": 1933,
+  "fale": 1985,
+  "nacionalidade": "Brasil",
+  "profissao": "Freira / Missionária",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Cyprien Rugamba",
+  "nasc": 1944,
+  "fale": 1994,
+  "nacionalidade": "Ruanda",
+  "profissao": "Missionário",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Dom Hélder Câmara",
+  "nasc": 1909,
+  "fale": 1999,
+  "nacionalidade": "Brasil",
+  "profissao": "Bispo",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Dorothy Day",
+  "nasc": 1897,
+  "fale": 1980,
+  "nacionalidade": "Estados Unidos",
+  "profissao": "Jornalista / Ativista",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Dulce Lopes Pontes (Santa Dulce dos Pobres)",
+  "nasc": 1914,
+  "fale": 1992,
+  "nacionalidade": "Brasil",
+  "profissao": "Freira / Enfermeira",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Edith Stein",
+  "nasc": 1891,
+  "fale": 1942,
+  "nacionalidade": "Polônia",
+  "profissao": "Freira",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Emil Kapaun",
+  "nasc": 1916,
+  "fale": 1951,
+  "nacionalidade": "Estados Unidos",
+  "profissao": "Militar / Padre",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Enrique Shaw",
+  "nasc": 1921,
+  "fale": 1962,
+  "nacionalidade": "Argentina",
+  "profissao": "Empresário",
+  "status": "Venerável",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Ezequiel Ramin",
+  "nasc": 1953,
+  "fale": 1985,
+  "nacionalidade": "Brasil (nascido na Itália)",
+  "profissao": "Padre missionário",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Francis Xavier Nguyễn Văn Thuận",
+  "nasc": 1928,
+  "fale": 2002,
+  "nacionalidade": "Vietnã",
+  "profissao": "Bispo / Cardeal",
+  "status": "Venerável",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Francisca de Paula de Jesus (Nhá Chica)",
+  "nasc": 1810,
+  "fale": 1895,
+  "nacionalidade": "Brasil",
+  "profissao": "Leiga",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Francisco Marto",
+  "nasc": 1908,
+  "fale": 1919,
+  "nacionalidade": "Portugal",
+  "profissao": "Estudante",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Franz de Castro Holzwarth",
+  "nasc": 1942,
+  "fale": 1981,
+  "nacionalidade": "Brasil",
+  "profissao": "Advogado",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Franz Jägerstätter",
+  "nasc": 1907,
+  "fale": 1943,
+  "nacionalidade": "Áustria",
+  "profissao": "Agricultor",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Frei Damião de Bozzano",
+  "nasc": 1898,
+  "fale": 1997,
+  "nacionalidade": "Brasil (nascido na Itália)",
+  "profissao": "Padre missionário",
+  "status": "Venerável",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Fulton Sheen",
+  "nasc": 1895,
+  "fale": 1979,
+  "nacionalidade": "Estados Unidos",
+  "profissao": "Padre / Professor / Apresentador de tv e rádio",
+  "status": "Venerável",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Gemma Galgani",
+  "nasc": 1878,
+  "fale": 1903,
+  "nacionalidade": "Itália",
+  "profissao": "Estudante",
+  "status": "Santo",
+  "foto": "",
+  "bio": [
+   "Gemma Galgani nasceu em 12 de março de 1878, em Camigliano, Itália, e posteriormente mudou-se para Lucca com sua família. Desde jovem, ela demonstrou profunda piedade e uma intensa devoção à Paixão de Cristo. Apesar de sofrer de várias doenças, incluindo tuberculose, Gemma manteve uma vida de intensa oração e era conhecida por experimentar fenômenos místicos, como visões e os estigmas. Ela desejava juntar-se às freiras Passionistas, mas não pôde devido à sua saúde. Gemma faleceu em 11 de abril de 1903, aos 25 anos.",
+   "A Igreja reconheceu a vida virtuosa de Gemma ao beatificá-la em 14 de maio de 1933, sob o Papa Pio XI, e posteriormente canonizá-la em 2 de maio de 1940, pelo Papa Pio XII. Suas relíquias estão guardadas no Mosteiro Passionista em Lucca, Itália.",
+   "Gemma é venerada como a santa padroeira dos estudantes, farmacêuticos e daqueles que sofrem de várias enfermidades, incluindo dores nas costas e dores de cabeça."
+  ],
+  "localNasc": "Camigliano, Itália",
+  "localRepouso": "Lucca, Itália"
+ },
+ {
+  "nome": "Gianna Beretta Molla",
+  "nasc": 1922,
+  "fale": 1962,
+  "nacionalidade": "Itália",
+  "profissao": "Médica / Esposa / Mãe",
+  "status": "Santo",
+  "foto": "",
+  "bio": [
+   "Santa Gianna Beretta Molla (1922 a 1962) foi uma pediatra, esposa e mãe italiana reconhecida por sua profunda fé e dedicação à família. Nascida em 4 de outubro de 1922, em Magenta, Itália, era a décima de treze filhos em uma família católica devota. Especializou-se em pediatria e, em 1955, casou-se com Pietro Molla, juntos tiveram quatro filhos.",
+   "Durante sua quarta gravidez, Gianna foi diagnosticada com um fibroma no útero. Apesar do conselho médico para interromper a gravidez, ela escolheu levar a gestação até o fim, priorizando a vida de seu filho não nascido sobre sua própria saúde. Após dar à luz sua filha, desenvolveu peritonite séptica e faleceu uma semana depois, em 28 de abril de 1962.",
+   "O Papa João Paulo II beatificou Gianna em 24 de abril de 1994 e a canonizou em 16 de maio de 2004, descrevendo-a como \"uma mãe que, com a força de sua fé, deu sua vida por seu filho.\""
+  ],
+  "localNasc": "Magenta, Itália",
+  "localRepouso": "Mesero, Itália"
+ },
+ {
+  "nome": "Giuseppe Moscati",
+  "nasc": 1880,
+  "fale": 1927,
+  "nacionalidade": "Itália",
+  "profissao": "Médico / Professor",
+  "status": "Santo",
+  "foto": "",
+  "bio": [
+   "Giuseppe Moscati nasceu em 25 de julho de 1880, em Benevento, Itália, e mais tarde mudou-se para Nápoles com sua família. Ele seguiu carreira na medicina, obtendo seu diploma pela Universidade de Nápoles em 1903. Como médico, Moscati era conhecido por seu atendimento compassivo, frequentemente tratando os pobres sem cobrar e integrando sua profunda fé católica em sua prática médica. Ele fez contribuições significativas para a ciência médica, incluindo o pioneirismo no uso de insulina na Itália para o tratamento do diabetes.",
+   "Moscati faleceu em 12 de abril de 1927, em seu consultório entre consultas com pacientes. Reconhecendo sua vida virtuosa e dedicação, a Igreja Católica o beatificou em 16 de novembro de 1975, sob o Papa Paulo VI, e posteriormente o canonizou em 25 de outubro de 1987, pelo Papa João Paulo II. Sua festa é celebrada em 16 de novembro, e seus restos mortais estão preservados na Igreja de Gesù Nuovo em Nápoles.",
+   "Moscati costumava dizer, \"lembre-se que você tem que lidar não apenas com os corpos, mas também com as almas gementes que vêm até você.\""
+  ],
+  "localNasc": "Benevento, Itália",
+  "localRepouso": "Nápoles, Itália"
+ },
+ {
+  "nome": "Guido Schaffer",
+  "nasc": 1974,
+  "fale": 2009,
+  "nacionalidade": "Brasil",
+  "profissao": "Seminarista / Médico",
+  "status": "Venerável",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Helena Kmiec",
+  "nasc": 1991,
+  "fale": 2017,
+  "nacionalidade": "Polônia",
+  "profissao": "Estudante / Missionária",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Isabel Cristina Mrad Campos",
+  "nasc": 1962,
+  "fale": 1982,
+  "nacionalidade": "Brasil",
+  "profissao": "Estudante de Direito",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Isidore Bakanja",
+  "nasc": 1887,
+  "fale": 1909,
+  "nacionalidade": "República Democrática do Congo",
+  "profissao": "Catequista",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Jacinta Marto",
+  "nasc": 1910,
+  "fale": 1920,
+  "nacionalidade": "Portugal",
+  "profissao": "Estudante",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Jacques Fesch",
+  "nasc": 1930,
+  "fale": 1957,
+  "nacionalidade": "França",
+  "profissao": "Presidiário",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [
+   "Jacques Fesch nasceu em 1930, em França. Era filho de pais separados. O pai era ateu e a mãe católica, e Jacques foi educado catolicamente, mas abandonou a Igreja aos 17 anos. Casou-se e teve um filho, mas sua vida não era das mais virtuosas. Trabalhava num banco, mas decidiu abandonar tudo para viver uma falsa liberdade, deixou emprego, casa e família. Em 25 de fevereiro de 1954, assaltou uma casa de câmbio e, na fuga, matou o policial Jean Vergne. Foi preso e condenado à morte.",
+   "Na prisão, em 28 de fevereiro de 1955, viveu uma conversão radical. Escreveu que \"um grito saiu do meu peito, uma súplica por ajuda, meu Deus, e, como um vento impetuoso que passa sem que soubesse de onde vem, o Espírito do Senhor agarrou-me pela garganta.\" Tornou-se devoto de São Francisco de Assis, Santa Teresa d'Ávila e Santa Teresinha, e passou a evangelizar por cartas.",
+   "Jacques morreu decapitado em 1 de outubro de 1957. No dia anterior, escreveu, \"amanhã, nesta hora, estarei no Paraíso. Mais cinco horas, e eu verei Jesus.\" O Cardeal Jean-Marie Lustiger, ao abrir seu processo de beatificação em 1993, disse, \"não há pecado tão grave que impeça o homem de chegar a Deus, que lhe propõe a salvação.\""
+  ],
+  "localNasc": "França",
+  "localRepouso": "Paris, França"
+ },
+ {
+  "nome": "James Miller",
+  "nasc": 1944,
+  "fale": 1982,
+  "nacionalidade": "Estados Unidos",
+  "profissao": "Padre / Professor / Missionário",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "John Henry Newman",
+  "nasc": 1801,
+  "fale": 1890,
+  "nacionalidade": "Inglaterra",
+  "profissao": "Cardeal / Teólogo / Escritor",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Josemaría Escrivá",
+  "nasc": 1902,
+  "fale": 1975,
+  "nacionalidade": "Espanha",
+  "profissao": "Padre",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Josephine Bakhita",
+  "nasc": 1869,
+  "fale": 1947,
+  "nacionalidade": "Sudão",
+  "profissao": "Freira",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "José Sánchez del Río",
+  "nasc": 1913,
+  "fale": 1928,
+  "nacionalidade": "México",
+  "profissao": "Estudante",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "João Luiz Pozzobon",
+  "nasc": 1904,
+  "fale": 1985,
+  "nacionalidade": "Brasil",
+  "profissao": "Diácono / Pai de família",
+  "status": "Venerável",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "João Paulo I",
+  "nasc": 1912,
+  "fale": 1978,
+  "nacionalidade": "Itália",
+  "profissao": "Papa",
+  "status": "Venerável",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "João XXIII",
+  "nasc": 1881,
+  "fale": 1963,
+  "nacionalidade": "Itália",
+  "profissao": "Papa",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Lindalva Justo de Oliveira",
+  "nasc": 1953,
+  "fale": 1993,
+  "nacionalidade": "Brasil",
+  "profissao": "Freira",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Lucia dos Santos",
+  "nasc": 1907,
+  "fale": 2005,
+  "nacionalidade": "Portugal",
+  "profissao": "Freira",
+  "status": "Venerável",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Madre Assunta Marchetti",
+  "nasc": 1871,
+  "fale": 1948,
+  "nacionalidade": "Brasil (nascida na Itália)",
+  "profissao": "Freira / Missionária / Cofundadora de congregação",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Madre Paulina do Coração Agonizante de Jesus",
+  "nasc": 1865,
+  "fale": 1942,
+  "nacionalidade": "Brasil (nascida na Itália)",
+  "profissao": "Freira / Fundadora de congregação",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Marcel Callo",
+  "nasc": 1921,
+  "fale": 1945,
+  "nacionalidade": "França",
+  "profissao": "Operário / Tipógrafo",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Marcello Candia",
+  "nasc": 1916,
+  "fale": 1983,
+  "nacionalidade": "Brasil (nascido na Itália)",
+  "profissao": "Empresário / Filantropo",
+  "status": "Venerável",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Marcelo Henrique Câmara",
+  "nasc": 1979,
+  "fale": 2008,
+  "nacionalidade": "Brasil",
+  "profissao": "Advogado / Promotor de Justiça / Professor universitário",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Maria Cristina Cella",
+  "nasc": 1969,
+  "fale": 1995,
+  "nacionalidade": "Itália",
+  "profissao": "Do lar",
+  "status": "Venerável",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Maria Faustina Kowalska",
+  "nasc": 1905,
+  "fale": 1938,
+  "nacionalidade": "Polônia",
+  "profissao": "Freira",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Maria Goretti",
+  "nasc": 1890,
+  "fale": 1902,
+  "nacionalidade": "Itália",
+  "profissao": "Camponesa / Leiga",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Marie-Clémentine Anuarite Nengapeta",
+  "nasc": 1939,
+  "fale": 1964,
+  "nacionalidade": "República Democrática do Congo",
+  "profissao": "Freira",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Mary MacKillop",
+  "nasc": 1842,
+  "fale": 1909,
+  "nacionalidade": "Austrália",
+  "profissao": "Freira / Educadora",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "María Guggiari Echeverría",
+  "nasc": 1925,
+  "fale": 1959,
+  "nacionalidade": "Paraguai",
+  "profissao": "Freira",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Matt Talbot",
+  "nasc": 1856,
+  "fale": 1925,
+  "nacionalidade": "Irlanda",
+  "profissao": "Operário",
+  "status": "Venerável",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Matteo Farina",
+  "nasc": 1990,
+  "fale": 2009,
+  "nacionalidade": "Itália",
+  "profissao": "Estudante / Músico",
+  "status": "Venerável",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Maximiliano Kolbe",
+  "nasc": 1894,
+  "fale": 1941,
+  "nacionalidade": "Polônia",
+  "profissao": "Padre franciscano",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Michelle Duppong",
+  "nasc": 1984,
+  "fale": 2015,
+  "nacionalidade": "Estados Unidos",
+  "profissao": "Missionária",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Miguel Pro",
+  "nasc": 1891,
+  "fale": 1927,
+  "nacionalidade": "México",
+  "profissao": "Padre jesuíta",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Padre Donizetti Tavares de Lima",
+  "nasc": 1882,
+  "fale": 1961,
+  "nacionalidade": "Brasil",
+  "profissao": "Padre",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Padre Eustáquio van Lieshout",
+  "nasc": 1890,
+  "fale": 1943,
+  "nacionalidade": "Brasil (nascido na Holanda)",
+  "profissao": "Padre / Fundador de hospitais",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Padre Léo (Léo Tarcísio Gonçalves Pereira)",
+  "nasc": 1961,
+  "fale": 2007,
+  "nacionalidade": "Brasil",
+  "profissao": "Padre / Fundador de comunidade terapêutica",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Padre Pio",
+  "nasc": 1887,
+  "fale": 1968,
+  "nacionalidade": "Itália",
+  "profissao": "Padre",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Papa João Paulo II",
+  "nasc": 1920,
+  "fale": 2005,
+  "nacionalidade": "Polônia",
+  "profissao": "Papa",
+  "status": "Santo",
+  "foto": "",
+  "bio": [
+   "O Papa João Paulo II, nascido Karol Józef Wojtyła em 18 de maio de 1920, em Wadowice, Polônia, foi eleito o 264º papa em 16 de outubro de 1978, tornando-se o primeiro papa não italiano em 455 anos. Seu papado, que durou quase 27 anos, foi marcado por extensivas viagens, diálogo inter-religioso e uma forte posição contra o comunismo, influenciando notavelmente a queda da Cortina de Ferro. Foi fundamental na implementação do Concílio Vaticano II e autor de numerosas encíclicas e livros.",
+   "O Papa João Paulo II foi beatificado em 1º de maio de 2011 e canonizado em 27 de abril de 2014. Sua festa é celebrada em 22 de outubro, aniversário de sua inauguração papal.",
+   "O Papa Bento XVI, durante a cerimônia de canonização, disse, \"a Igreja reconheceu nele um modelo de santidade e uma testemunha da esperança que não decepciona.\""
+  ],
+  "localNasc": "Wadowice, Polônia",
+  "localRepouso": "Cidade do Vaticano"
+ },
+ {
+  "nome": "Paulo VI",
+  "nasc": 1897,
+  "fale": 1978,
+  "nacionalidade": "Itália",
+  "profissao": "Papa",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Peter To Rot",
+  "nasc": 1912,
+  "fale": 1945,
+  "nacionalidade": "Papua Nova Guiné",
+  "profissao": "Catequista",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Pier Giorgio Frassati",
+  "nasc": 1901,
+  "fale": 1925,
+  "nacionalidade": "Itália",
+  "profissao": "Estudante",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Rosario Livatino",
+  "nasc": 1952,
+  "fale": 1990,
+  "nacionalidade": "Itália",
+  "profissao": "Juiz",
+  "status": "Beato",
+  "foto": "",
+  "bio": [
+   "Rosario Livatino foi um juiz italiano conhecido por sua profunda fé e compromisso com a justiça. Nascido em 1952 na Sicília, estudou direito na Universidade de Palermo e tornou-se magistrado, dedicando sua carreira ao combate ao crime organizado. Apesar das ameaças da Máfia, Livatino manteve-se firme em seus princípios, acreditando que seu trabalho não era apenas um dever legal, mas moral e espiritual. Ele viveu uma vida humilde, guiado por sua fé católica, e frequentemente referia-se a si mesmo como \"subordinado de Deus\", enfatizando seu senso de missão divina na defesa da justiça.",
+   "Livatino ganhou destaque por seus esforços em processar membros da Máfia Siciliana, particularmente através de seu trabalho contra a corrupção e atividades financeiras ilegais. Ele recusou proteção pessoal, acreditando que seu destino estava nas mãos de Deus. Sua coragem o tornou um alvo, e em 21 de setembro de 1990, com apenas 37 anos, foi emboscado e assassinado por pistoleiros da Máfia a caminho do tribunal. Seu assassinato foi um trágico lembrete dos perigos enfrentados por aqueles que se opõem ao crime organizado, mas seu legado perdurou, inspirando muitos na Itália e além.",
+   "Reconhecido por sua virtude heroica e martírio, Rosario Livatino foi beatificado em 9 de maio de 2021 pelo Papa Francisco, que o elogiou como um modelo de integridade e fé no serviço público."
+  ],
+  "localNasc": "Canicattì, Itália",
+  "localRepouso": "Canicattì, Itália"
+ },
+ {
+  "nome": "Sandra Sabattini",
+  "nasc": 1961,
+  "fale": 1984,
+  "nacionalidade": "Itália",
+  "profissao": "Estudante",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Solanus Casey",
+  "nasc": 1870,
+  "fale": 1957,
+  "nacionalidade": "Estados Unidos",
+  "profissao": "Padre",
+  "status": "Beato",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Stanley Rother",
+  "nasc": 1935,
+  "fale": 1981,
+  "nacionalidade": "Estados Unidos",
+  "profissao": "Padre",
+  "status": "Beato",
+  "foto": "",
+  "bio": [
+   "Stanley Francis Rother nasceu em 27 de março de 1935, em Okarche, Oklahoma. Ordenado sacerdote para a Arquidiocese de Oklahoma City em 1963, serviu em várias paróquias antes de se voluntariar para trabalho missionário na Guatemala em 1968. Na vila de Santiago Atitlán, ele ministrou ao povo Tz'utujil, aprendendo sua língua e traduzindo o Novo Testamento para o Tz'utujil. Durante o conflito civil da Guatemala, Padre Rother permaneceu firme em meio à crescente violência e dizia que \"o pastor não pode fugir ao primeiro sinal de perigo.\"",
+   "Em 28 de julho de 1981, Padre Rother foi assassinado em sua casa paroquial, tornando-se o primeiro padre nascido nos EUA e mártir reconhecido pela Igreja Católica. O Papa Francisco reconheceu seu martírio em 1º de dezembro de 2016, levando à sua beatificação em 23 de setembro de 2017, em Oklahoma City.",
+   "A dedicação inabalável do Padre Rother aos seus paroquianos e seu sacrifício final exemplificam profunda fé e coragem. Seu legado continua a inspirar, particularmente através do Santuário do Bem-aventurado Stanley Rother em Oklahoma City, dedicado em fevereiro de 2023."
+  ],
+  "localNasc": "Okarche, Oklahoma, EUA",
+  "localRepouso": "Oklahoma City, Oklahoma, EUA"
+ },
+ {
+  "nome": "Takashi Nagai",
+  "nasc": 1908,
+  "fale": 1951,
+  "nacionalidade": "Japão",
+  "profissao": "Médico",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Teresa de Calcutá",
+  "nasc": 1910,
+  "fale": 1997,
+  "nacionalidade": "Índia (nascida em Skopje, atual Macedônia do Norte)",
+  "profissao": "Freira",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Thea Bowman",
+  "nasc": 1937,
+  "fale": 1990,
+  "nacionalidade": "Estados Unidos",
+  "profissao": "Freira / Professora / Música",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Thérèse de Lisieux",
+  "nasc": 1873,
+  "fale": 1897,
+  "nacionalidade": "França",
+  "profissao": "Freira",
+  "status": "Santo",
+  "foto": "",
+  "bio": [
+   "Santa Teresa de Lisieux (1873 a 1897), também conhecida como Santa Teresa do Menino Jesus e da Santa Face, foi uma freira carmelita francesa cuja espiritualidade do \"pequeno caminho\" de confiança e amor inspirou milhões. Nascida Marie Françoise-Thérèse Martin em 2 de janeiro de 1873, em Alençon, França, ela entrou no convento carmelita em Lisieux aos 15 anos. Apesar de sua vida curta, marcada por doença e sofrimento, Teresa viveu com uma extraordinária confiança em Deus e um desejo de ser amor no coração da Igreja.",
+   "Sua autobiografia, História de uma Alma, escrita a pedido de sua priora, tornou-se um clássico espiritual. Teresa enfatizou que a santidade é alcançável por qualquer pessoa através de pequenos atos de amor e entrega à vontade de Deus, o que lhe rendeu o título de \"a Pequena Flor\". Ela morreu de tuberculose em 30 de setembro de 1897, aos 24 anos.",
+   "Teresa foi canonizada pelo Papa Pio XI em 17 de maio de 1925 e declarada Doutora da Igreja pelo Papa João Paulo II em 19 de outubro de 1997. Sua festa é celebrada em 1º de outubro. O Papa Pio XI a chamou de \"a maior santa dos tempos modernos\", ressaltando a universalidade e simplicidade de sua mensagem."
+  ],
+  "localNasc": "Alençon, França",
+  "localRepouso": "Lisieux, França"
+ },
+ {
+  "nome": "Titus Brandsma",
+  "nasc": 1881,
+  "fale": 1942,
+  "nacionalidade": "Holanda",
+  "profissao": "Padre / Jornalista / Professor",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Zilda Arns",
+  "nasc": 1934,
+  "fale": 2010,
+  "nacionalidade": "Brasil",
+  "profissao": "Médica",
+  "status": "Servo de Deus",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ },
+ {
+  "nome": "Óscar Romero",
+  "nasc": 1917,
+  "fale": 1980,
+  "nacionalidade": "El Salvador",
+  "profissao": "Bispo",
+  "status": "Santo",
+  "foto": "",
+  "bio": [],
+  "localNasc": "",
+  "localRepouso": ""
+ }
+];
 
 const NATION_FLAGS = {
   "Itália": "🇮🇹", "França": "🇫🇷", "Estados Unidos": "🇺🇸", "Polônia": "🇵🇱",
