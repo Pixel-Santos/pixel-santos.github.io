@@ -25,3 +25,9 @@ Delas, 17 tem travessao, 13 tem dois pontos e a maioria esta em 3 paragrafos.
 Isso e o esperado, sao as que ficaram na fila da padronizacao.
 Faltam ainda os pronomes sem hifen em Jacques Fesch e Papa Joao Paulo II,
 que serao corrigidos quando essas duas forem reescritas.
+
+## Licao aprendida em 30/07 sobre replace_all_matches
+No Francisco Marto usei replace_all_matches para remover um bloco solto e
+ele apagou tambem a frase identica que eu tinha acabado de inserir no
+paragrafo anterior, sumindo com a morte dele. Nunca usar replace_all quando
+o texto novo repete o texto antigo. Corrigido no mesmo minuto.
