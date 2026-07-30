@@ -1,0 +1,758 @@
+[
+ {
+  "nome": "Akash Bashir",
+  "conf": "ok",
+  "qid": "Q110925976",
+  "rotulo": "Akash Bashir",
+  "nascLocal": "Risalpur, Paquistão",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Albertina Berkenbrock",
+  "conf": "ok",
+  "qid": "Q267124",
+  "rotulo": "Albertina Berkenbrock",
+  "nascLocal": "Imaruí, Brasil",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "André Bessette",
+  "conf": "ok",
+  "qid": "Q517066",
+  "rotulo": "Alfred Bessette",
+  "nascLocal": "Mont-Saint-Grégoire, Canadá",
+  "sepLocal": "Quebec, Canadá",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Fr%C3%A8re_Andr%C3%A9_1920.jpg"
+ },
+ {
+  "nome": "Antonietta Meo (Nennolina)",
+  "conf": "ok",
+  "qid": "Q377168",
+  "rotulo": "Antonietta Meo",
+  "nascLocal": "Roma, Itália",
+  "sepLocal": "Basílica de Santa Cruz de Jerusalém, Itália",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Antonietta_Meo.jpg"
+ },
+ {
+  "nome": "Augustus Tolton",
+  "conf": "ok",
+  "qid": "Q2841266",
+  "rotulo": "Augustus Tolton",
+  "nascLocal": "condado de Ralls, Estados Unidos",
+  "sepLocal": "Quincy, Estados Unidos",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Augustus_Tolton.jpg"
+ },
+ {
+  "nome": "Bernadette Soubirous",
+  "conf": "ok",
+  "qid": "Q55398",
+  "rotulo": "Bernadette Soubirous",
+  "nascLocal": "Lourdes, França",
+  "sepLocal": "Nièvre, França",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Bernadette_Soubirous.jpg"
+ },
+ {
+  "nome": "Carlo Acutis",
+  "conf": "ok",
+  "qid": "Q2939142",
+  "rotulo": "Carlo Acutis",
+  "nascLocal": "Londres, Reino Unido",
+  "sepLocal": "Santa Maria Maggiore, Itália",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Covent_Garden%2C_Corpus_Christi_Catholic_Church%2C_Carlo_Acutis_memorial.jpg"
+ },
+ {
+  "nome": "Carlos Manuel Rodríguez",
+  "conf": "ok",
+  "qid": "Q5042332",
+  "rotulo": "Carlos Manuel Rodríguez Santiago",
+  "nascLocal": "Caguas, Estados Unidos",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Catedral_de_San_Juan_Bautista_de_Puerto_Rico_-_DSC06864_%28cropped%29.JPG"
+ },
+ {
+  "nome": "Carmen Hernández",
+  "conf": "ok",
+  "qid": "Q923276",
+  "rotulo": "Carmen Hernández",
+  "nascLocal": "Ólvega, Espanha",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/CarmenHernandezJMJ.JPG"
+ },
+ {
+  "nome": "Charles de Foucauld",
+  "conf": "ok",
+  "qid": "Q51880",
+  "rotulo": "Charles de Foucauld",
+  "nascLocal": "Estrasburgo, França",
+  "sepLocal": "Tamanrasset, Argélia",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles_de_Foucauld.jpg"
+ },
+ {
+  "nome": "Chiara Badano",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Chiara Petrillo",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Clare Crockett",
+  "conf": "ok",
+  "qid": "Q65033603",
+  "rotulo": "Clare Crockett",
+  "nascLocal": "Derry, Reino Unido",
+  "sepLocal": "Derry City Cemetery, Reino Unido",
+  "imagem": ""
+ },
+ {
+  "nome": "Clarita Segura",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Cleusa Carolina Rody Coelho",
+  "conf": "ok",
+  "qid": "Q130360013",
+  "rotulo": "Cleusa Carolina Rody Coelho",
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Hermana_Cleusa_Carolina_Rody_Coelho_%281933-1985%29_Misionera_Agustina_Recoleta%2C_m%C3%A1rtir_del_Amazonas.jpg"
+ },
+ {
+  "nome": "Cyprien Rugamba",
+  "conf": "ok",
+  "qid": "Q40751246",
+  "rotulo": "Cyprien Rugamba",
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Dom Hélder Câmara",
+  "conf": "ok",
+  "qid": "Q378326",
+  "rotulo": "Hélder Câmara",
+  "nascLocal": "Fortaleza, Brasil",
+  "sepLocal": "Sé de Olinda, Brasil",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Helder_Camara_1974.jpg"
+ },
+ {
+  "nome": "Dorothy Day",
+  "conf": "ok",
+  "qid": "Q150281",
+  "rotulo": "Dorothy Day",
+  "nascLocal": "Brooklyn Heights, Estados Unidos",
+  "sepLocal": "Cemetery of the Resurrection, Estados Unidos",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Dorothy_Day%2C_1916_%28cropped%29.jpg"
+ },
+ {
+  "nome": "Dulce Lopes Pontes (Santa Dulce dos Pobres)",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Edith Stein",
+  "conf": "ok",
+  "qid": "Q76749",
+  "rotulo": "Edith Stein",
+  "nascLocal": "Breslávia, Polónia",
+  "sepLocal": "Auschwitz, Polónia",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Edith_Stein_%28ca._1938-1939%29.jpg"
+ },
+ {
+  "nome": "Emil Kapaun",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Enrique Shaw",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Ezequiel Ramin",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Francis Xavier Nguyễn Văn Thuận",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Francisca de Paula de Jesus (Nhá Chica)",
+  "conf": "ok",
+  "qid": "Q7023400",
+  "rotulo": "Nhá Chica",
+  "nascLocal": "São João del-Rei, Brasil",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Santa_Nh%C3%A1_Chica_de_Baependi.jpg"
+ },
+ {
+  "nome": "Francisco Marto",
+  "conf": "ok",
+  "qid": "Q1442116",
+  "rotulo": "Francisco Marto",
+  "nascLocal": "Fátima, Portugal",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Retrato_de_S%C3%A3o_Francisco_Marto_%E2%80%93_cropped.jpg"
+ },
+ {
+  "nome": "Franz de Castro Holzwarth",
+  "conf": "ok",
+  "qid": "Q10285588",
+  "rotulo": "Franz de Castro Holzwarth",
+  "nascLocal": "Barra do Piraí, Brasil",
+  "sepLocal": "Igreja Matriz de São José dos Campos, Brasil",
+  "imagem": ""
+ },
+ {
+  "nome": "Franz Jägerstätter",
+  "conf": "ok",
+  "qid": "Q45243",
+  "rotulo": "Franz Jägerstätter",
+  "nascLocal": "Sankt Radegund, Áustria",
+  "sepLocal": "Sankt Radegund, Áustria",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Franz_J%C3%A4gerst%C3%A4tter_in_a_Wehrmacht_uniform_%28ID_photo%29.png"
+ },
+ {
+  "nome": "Frei Damião de Bozzano",
+  "conf": "ok",
+  "qid": "Q7053546",
+  "rotulo": "Frei Damião",
+  "nascLocal": "Bozzano, Itália",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/F.Damiao.jpg"
+ },
+ {
+  "nome": "Fulton Sheen",
+  "conf": "ok",
+  "qid": "Q954398",
+  "rotulo": "Fulton J. Sheen",
+  "nascLocal": "El Paso, Estados Unidos",
+  "sepLocal": "Catedral de São Patrício, Estados Unidos",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Bishop_Fulton_J._Sheen_1956.JPG"
+ },
+ {
+  "nome": "Gemma Galgani",
+  "conf": "ok",
+  "qid": "Q239122",
+  "rotulo": "Gemma Galgani",
+  "nascLocal": "Capannori, Itália",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/La_seraphique_Gemma_Galgani_%28HS85-10-31647%29.jpg"
+ },
+ {
+  "nome": "Gianna Beretta Molla",
+  "conf": "ok",
+  "qid": "Q238963",
+  "rotulo": "Gianna Beretta Molla",
+  "nascLocal": "Magenta, Itália",
+  "sepLocal": "cemetery of Mesero, Itália",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/GiannaBerettaMolla.jpg"
+ },
+ {
+  "nome": "Giuseppe Moscati",
+  "conf": "ok",
+  "qid": "Q737786",
+  "rotulo": "Giuseppe Moscati",
+  "nascLocal": "Benevento, Itália",
+  "sepLocal": "Igreja de Gesù Nuovo, Itália",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/San_Giuseppe_Moscati.jpg"
+ },
+ {
+  "nome": "Guido Schaffer",
+  "conf": "ok",
+  "qid": "Q25440416",
+  "rotulo": "Guido Vidal França Schäffer",
+  "nascLocal": "Volta Redonda, Brasil",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Guido_sch%C3%A4ffer.png"
+ },
+ {
+  "nome": "Helena Kmiec",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Isabel Cristina Mrad Campos",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Isidore Bakanja",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Jacinta Marto",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Jacques Fesch",
+  "conf": "ok",
+  "qid": "Q934377",
+  "rotulo": "Jacques Fesch",
+  "nascLocal": "Saint-Germain-en-Laye, França",
+  "sepLocal": "Saint Germain-en-Laye Old Communal Cemetery, França",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacques_Fesch_mugshot.png"
+ },
+ {
+  "nome": "James Miller",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "John Henry Newman",
+  "conf": "ok",
+  "qid": "Q44490",
+  "rotulo": "John Henry Newman",
+  "nascLocal": "Londres, Reino Unido",
+  "sepLocal": "Midlands Ocidentais, Reino Unido",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Cardinal_Newman_Portrait_%28cropped%29.jpg"
+ },
+ {
+  "nome": "Josemaría Escrivá",
+  "conf": "ok",
+  "qid": "Q186807",
+  "rotulo": "Josemaría Escrivá de Balaguer",
+  "nascLocal": "Barbastro, Espanha",
+  "sepLocal": "Santa Maria da Paz, Itália",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Josemaria_Escriva.jpg"
+ },
+ {
+  "nome": "Josephine Bakhita",
+  "conf": "ok",
+  "qid": "Q236030",
+  "rotulo": "Josefina Bakhita",
+  "nascLocal": "Sultanato de Darfur",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Bakhita_Szent_Jozefina.jpeg"
+ },
+ {
+  "nome": "José Sánchez del Río",
+  "conf": "ok",
+  "qid": "Q2642317",
+  "rotulo": "José Luís Sánchez Del Río",
+  "nascLocal": "Sahuayo Municipality, México",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Jos%C3%A9_S%C3%A1nchez_del_R%C3%ADo.jpg"
+ },
+ {
+  "nome": "João Luiz Pozzobon",
+  "conf": "ok",
+  "qid": "Q1234568",
+  "rotulo": "João Luiz Pozzobon",
+  "nascLocal": "São João do Polêsine, Brasil",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Pilgrim_Mother_-_Pozzobon_rosary_01.jpg"
+ },
+ {
+  "nome": "João Paulo I",
+  "conf": "ok",
+  "qid": "Q37278",
+  "rotulo": "Papa João Paulo I",
+  "nascLocal": "Canale d'Agordo, Itália",
+  "sepLocal": "Grutas do Vaticano, Vaticano",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Paus_Johannes_Paulus_I_%28Bestanddeelnr_929-9074%29_%28cropped%29.jpg"
+ },
+ {
+  "nome": "João XXIII",
+  "conf": "ok",
+  "qid": "Q23873",
+  "rotulo": "Papa João XXIII",
+  "nascLocal": "Sotto il Monte Giovanni XXIII, Itália",
+  "sepLocal": "Tomb of John XXIII, Vaticano",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Ioannes_XXIII%2C_by_De_Agostini%2C_1958%E2%80%931963.jpg"
+ },
+ {
+  "nome": "Lindalva Justo de Oliveira",
+  "conf": "ok",
+  "qid": "Q768136",
+  "rotulo": "Lindalva Justo de Oliveira",
+  "nascLocal": "Rio Grande do Norte, Brasil",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Lucia dos Santos",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Madre Assunta Marchetti",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Madre Paulina do Coração Agonizante de Jesus",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Marcel Callo",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Marcello Candia",
+  "conf": "ok",
+  "qid": "Q684174",
+  "rotulo": "Marcello Candia",
+  "nascLocal": "Portici, Itália",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Marcello_Candia.jpg"
+ },
+ {
+  "nome": "Marcelo Henrique Câmara",
+  "conf": "ok",
+  "qid": "Q125728439",
+  "rotulo": "Marcelo Henrique Câmara",
+  "nascLocal": "Florianópolis, Brasil",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Marcelo_C%C3%A2mara.png"
+ },
+ {
+  "nome": "Maria Cristina Cella",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Maria Faustina Kowalska",
+  "conf": "ok",
+  "qid": "Q18978",
+  "rotulo": "Faustina Kowalska",
+  "nascLocal": "Głogowiec, Polónia",
+  "sepLocal": "Chapel of St. Joseph in Kraków, Polónia",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint_Faustyna_Kowalska_portrait_%281931%29.jpg"
+ },
+ {
+  "nome": "Maria Goretti",
+  "conf": "ok",
+  "qid": "Q234697",
+  "rotulo": "Maria Goretti",
+  "nascLocal": "Corinaldo, Itália",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Photograph_of_Saint_Maria_Goretti%2C_1902.jpg"
+ },
+ {
+  "nome": "Marie-Clémentine Anuarite Nengapeta",
+  "conf": "ok",
+  "qid": "Q466996",
+  "rotulo": "Marie-Clémentine Anuarite Nengapeta",
+  "nascLocal": "Wamba, República Democrática do Congo",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie-Cl%C3%A9mentine_Anuarite_Nengapeta.jpg"
+ },
+ {
+  "nome": "Mary MacKillop",
+  "conf": "ok",
+  "qid": "Q275976",
+  "rotulo": "Mary MacKillop",
+  "nascLocal": "Melbourne, Austrália",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Mary_mackillop.jpg"
+ },
+ {
+  "nome": "María Guggiari Echeverría",
+  "conf": "ok",
+  "qid": "Q21595729",
+  "rotulo": "Maria Felícia Guggiari Echeverría",
+  "nascLocal": "Vila Rica, Paraguai",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Oratorio_de_Chiquitunga_135633.jpg"
+ },
+ {
+  "nome": "Matt Talbot",
+  "conf": "ok",
+  "qid": "Q3041855",
+  "rotulo": "Matt Talbot",
+  "nascLocal": "Dublin, República da Irlanda",
+  "sepLocal": "Glasnevin Cemetery, República da Irlanda",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Talbot.jpg"
+ },
+ {
+  "nome": "Matteo Farina",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Maximiliano Kolbe",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Michelle Duppong",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Miguel Pro",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Padre Donizetti Tavares de Lima",
+  "conf": "ok",
+  "qid": "Q10343471",
+  "rotulo": "Padre Donizetti",
+  "nascLocal": "Cássia, Brasil",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Donizetti_Tavares_de_Lima.png"
+ },
+ {
+  "nome": "Padre Eustáquio van Lieshout",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Padre Léo (Léo Tarcísio Gonçalves Pereira)",
+  "conf": "ok",
+  "qid": "Q10321965",
+  "rotulo": "Léo Tarcísio Gonçalves Pereira",
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Padre_L%C3%A9o.jpg"
+ },
+ {
+  "nome": "Padre Pio",
+  "conf": "ok",
+  "qid": "Q193754",
+  "rotulo": "Padre Pio",
+  "nascLocal": "Pietrelcina, Itália",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Padre_Pio_portrait.jpg"
+ },
+ {
+  "nome": "Papa João Paulo II",
+  "conf": "ok",
+  "qid": "Q989",
+  "rotulo": "Papa João Paulo II",
+  "nascLocal": "Wadowice, Polónia",
+  "sepLocal": "Basílica de São Pedro, Vaticano",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Pope_John_Paul_II_smile.jpg"
+ },
+ {
+  "nome": "Paulo VI",
+  "conf": "ok",
+  "qid": "Q16975",
+  "rotulo": "Papa Paulo VI",
+  "nascLocal": "Concesio, Itália",
+  "sepLocal": "Grutas do Vaticano, Vaticano",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Pope_Paul_VI_1969_Portrait_%284x5_cropped%29.jpg"
+ },
+ {
+  "nome": "Peter To Rot",
+  "conf": "ok",
+  "qid": "Q15995788",
+  "rotulo": "Peter To Rot",
+  "nascLocal": "Rakunai, Papua-Nova Guiné",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Pier Giorgio Frassati",
+  "conf": "ok",
+  "qid": "Q679784",
+  "rotulo": "Pier Giorgio Frassati",
+  "nascLocal": "Turim, Itália",
+  "sepLocal": "Catedral de Turim, Itália",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/PierGiorgioFrassati-Pr%C3%A9sentation.jpg"
+ },
+ {
+  "nome": "Rosario Livatino",
+  "conf": "ok",
+  "qid": "Q1059936",
+  "rotulo": "Rosario Livatino",
+  "nascLocal": "Canicattì, Itália",
+  "sepLocal": "",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/Giudice_Rosario_Livatino.jpg"
+ },
+ {
+  "nome": "Sandra Sabattini",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Solanus Casey",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Stanley Rother",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Takashi Nagai",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Teresa de Calcutá",
+  "conf": "ok",
+  "qid": "Q30547",
+  "rotulo": "Madre Teresa de Calcutá",
+  "nascLocal": "Skopje, Macedónia do Norte",
+  "sepLocal": "Mother House Of The Missionaries Of Charity, Índia",
+  "imagem": "https://commons.wikimedia.org/wiki/Special:FilePath/MotherTeresa_090.jpg"
+ },
+ {
+  "nome": "Thea Bowman",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Thérèse de Lisieux",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Titus Brandsma",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Zilda Arns",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ },
+ {
+  "nome": "Óscar Romero",
+  "conf": "nao identificado",
+  "qid": null,
+  "rotulo": null,
+  "nascLocal": "",
+  "sepLocal": "",
+  "imagem": ""
+ }
+]

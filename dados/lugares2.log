@@ -1,0 +1,8 @@
+pendentes: 24
+  lote 1 (24 pessoas)
+    falhou (HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)), aguardando 70s
+    falhou (HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)), aguardando 70s
+    falhou (HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)), aguardando 70s
+    ok, 24 linhas
+
+PRONTO. nascimento=49 sepultamento=26
