@@ -146,7 +146,11 @@ def biografia(page_id):
             continue
         t = texto_de(b.get(tipo, {}).get("rich_text"))
         if t:
-            paragrafos.append(t)
+            # uma quebra de linha dentro do bloco tambem vale como paragrafo
+            for pedaco in t.split("\n"):
+                pedaco = pedaco.strip()
+                if pedaco:
+                    paragrafos.append(pedaco)
     return paragrafos
 
 
