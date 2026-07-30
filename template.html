@@ -782,7 +782,7 @@
   <section class="hero">
     <p class="eyebrow sans-accent">Catálogo de santidade contemporânea</p>
     <h1 class="display">A santidade não ficou<br>no século passado.</h1>
-    <p class="hero-lede">Médicos, estudantes, juízes, presidiários, papas. Pixel Santo reúne histórias de pessoas comuns que a Igreja reconhece como exemplo de fé para o nosso tempo, do lugar onde nasceram até o lugar onde descansam.</p>
+    <p class="hero-lede">Médicos, estudantes, juízes, operários, jornalistas, presidiários, mães, papas. Antes de virarem exemplo de fé, foram gente comum, com profissão, família e as mesmas dúvidas que você tem. Pixel Santo reúne essas histórias e mostra onde cada um nasceu e onde hoje se reza pedindo sua intercessão.</p>
     <div class="hero-stats">
       <div>
         <div class="stat-num" id="statCount">0</div>
@@ -826,6 +826,7 @@
     <div class="sort-control">
       <label for="sortSelect">Ordenar por</label>
       <select id="sortSelect">
+        <option value="recentes">Mais recentes</option>
         <option value="padrao">Padrão</option>
         <option value="nome">Nome</option>
         <option value="nascimento">Ano de nascimento</option>
@@ -1025,13 +1026,15 @@ function renderGrid(list) {
 }
 
 const SORTERS = {
+  // do mais novo para o mais antigo, para o catalogo abrir com cara jovem
+  recentes: (list) => [...list].sort((a, b) => b.nasc - a.nasc),
   padrao: (list) => list,
   nome: (list) => [...list].sort((a, b) => a.nome.localeCompare(b.nome, "pt")),
   nascimento: (list) => [...list].sort((a, b) => a.nasc - b.nasc),
   estagio: (list) => [...list].sort((a, b) => STATUS_STEPS.indexOf(b.status) - STATUS_STEPS.indexOf(a.status))
 };
 
-renderGrid(SAINTS);
+renderGrid(SORTERS.recentes(SAINTS));
 
 document.getElementById("sortSelect").addEventListener("change", (e) => {
   renderGrid(SORTERS[e.target.value](SAINTS));
