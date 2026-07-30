@@ -881,11 +881,29 @@ const NATION_FLAGS = {
   "Japão": "🇯🇵", "China": "🇨🇳", "Vietnã": "🇻🇳", "Canadá": "🇨🇦",
   "Áustria": "🇦🇹", "Bélgica": "🇧🇪", "Holanda": "🇳🇱", "Suíça": "🇨🇭",
   "Hungria": "🇭🇺", "Líbano": "🇱🇧", "Egito": "🇪🇬", "Nigéria": "🇳🇬",
-  "Guatemala": "🇬🇹", "Venezuela": "🇻🇪", "Chile": "🇨🇱", "Sudão": "🇸🇩"
+  "Guatemala": "🇬🇹", "Venezuela": "🇻🇪", "Chile": "🇨🇱", "Sudão": "🇸🇩",
+  "Paquistão": "🇵🇰", "Porto Rico": "🇵🇷", "Austrália": "🇦🇺", "Paraguai": "🇵🇾",
+  "El Salvador": "🇸🇻", "Papua Nova Guiné": "🇵🇬", "Inglaterra": "🇬🇧",
+  "Irlanda do Norte": "🇬🇧", "República Democrática do Congo": "🇨🇩",
+  "Escócia": "🇬🇧", "País de Gales": "🇬🇧", "Bolívia": "🇧🇴", "Equador": "🇪🇨",
+  "Uruguai": "🇺🇾", "Cuba": "🇨🇺", "Haiti": "🇭🇹", "Quênia": "🇰🇪",
+  "Tanzânia": "🇹🇿", "Moçambique": "🇲🇿", "Angola": "🇦🇴", "Coreia do Norte": "🇰🇵",
+  "Tailândia": "🇹🇭", "Indonésia": "🇮🇩", "Sri Lanka": "🇱🇰", "Síria": "🇸🇾",
+  "Iraque": "🇮🇶", "Armênia": "🇦🇲", "Ucrânia": "🇺🇦", "Rússia": "🇷🇺",
+  "Romênia": "🇷🇴", "Eslováquia": "🇸🇰", "Eslovênia": "🇸🇮", "Lituânia": "🇱🇹",
+  "Malta": "🇲🇹", "Grécia": "🇬🇷", "Suécia": "🇸🇪", "Noruega": "🇳🇴",
+  "Dinamarca": "🇩🇰", "Escandinávia": "", "Nova Zelândia": "🇳🇿",
+  "Macedônia do Norte": "🇲🇰", "Etiópia": "🇪🇹", "Camarões": "🇨🇲",
+  "Burkina Faso": "🇧🇫", "Madagascar": "🇲🇬", "Vaticano": "🇻🇦"
 };
 
 function flagFor(nacionalidade) {
-  return NATION_FLAGS[nacionalidade] || "";
+  if (!nacionalidade) return "";
+  const limpo = nacionalidade.trim();
+  if (NATION_FLAGS[limpo]) return NATION_FLAGS[limpo];
+  // aceita formas como "Brasil (nascido na Itália)" usando o país antes do parêntese
+  const base = limpo.split("(")[0].trim();
+  return NATION_FLAGS[base] || "";
 }
 
 function initials(name) {
