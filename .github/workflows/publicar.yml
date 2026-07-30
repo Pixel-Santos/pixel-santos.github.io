@@ -1,0 +1,65 @@
+name: Publicar o site
+
+# Roda em tres situacoes:
+#  1. sempre que algo novo chega no repositorio
+#  2. todo dia de manha, para pegar o que mudou no Notion
+#  3. quando voce aperta o botao "Run workflow" na aba Actions
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 12 * * *"   # 9h no horario de Brasilia
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # o build.py usa o sips, que so existe no Mac.
+      # aqui no servidor Linux o ImageMagick faz o mesmo trabalho.
+      - name: Instalar o ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
+      # Se a chave do Notion ainda nao foi cadastrada, este passo e pulado
+      # e o site e publicado do jeito que ja esta guardado aqui.
+      - name: Gerar o site a partir do Notion
+        if: ${{ secrets.NOTION_TOKEN != '' }}
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: python3 build.py
+
+      - name: Guardar o que mudou
+        if: ${{ secrets.NOTION_TOKEN != '' }}
+        run: |
+          git config user.name "Pixel Santo bot"
+          git config user.email "actions@github.com"
+          git add site
+          git diff --staged --quiet || git commit -m "Atualiza o catalogo a partir do Notion"
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
