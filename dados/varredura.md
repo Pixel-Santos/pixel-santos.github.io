@@ -31,3 +31,12 @@ No Francisco Marto usei replace_all_matches para remover um bloco solto e
 ele apagou tambem a frase identica que eu tinha acabado de inserir no
 paragrafo anterior, sumindo com a morte dele. Nunca usar replace_all quando
 o texto novo repete o texto antigo. Corrigido no mesmo minuto.
+
+## Licao aprendida em 31/07, e esta e grave
+Quando se manda VARIAS content_updates numa mesma chamada, o Notion pode
+aplicar so as que casaram e ainda assim responder sucesso. Uma que nao casa
+NAO derruba a chamada. Foi o que aconteceu no Frei Damiao, onde a segunda
+substituicao falhou calada por causa de um erro meu na palavra veneravel, e
+o texto ficou com uma frase duplicada.
+REGRA: depois de qualquer chamada com mais de uma substituicao, conferir a
+pagina com notion-fetch antes de marcar como pronta.
