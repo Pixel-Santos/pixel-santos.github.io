@@ -17,6 +17,7 @@ import os
 import re
 import shutil
 import subprocess
+import time
 import sys
 import unicodedata
 import urllib.error
@@ -188,19 +189,37 @@ def comprimir(origem, destino):
     return r.returncode == 0 and destino.exists()
 
 
-def baixar_foto(url, destino):
-    """Baixa e comprime a foto. Devolve True se deu certo."""
-    try:
-        req = urllib.request.Request(url, headers={
-            "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                           "AppleWebKit/537.36 (KHTML, like Gecko) "
-                           "Chrome/124.0.0.0 Safari/537.36"),
-            "Accept": "image/avif,image/webp,image/*,*/*;q=0.8",
-        })
-        with urllib.request.urlopen(req, timeout=60) as r:
-            bruto = r.read()
-    except Exception as e:
-        print(f"    aviso: nao consegui baixar a foto ({e})")
+def baixar_foto(url, destino, tentativas=4):
+    """Baixa e comprime a foto. Devolve True se deu certo.
+
+    Sites como o Wikimedia limitam quem baixa muitas imagens seguidas e
+    respondem com erro momentaneo. Sem repetir a tentativa, a foto daquele
+    santo sumia do site inteiro por causa de uma falha de um segundo.
+    Por isso aqui insistimos algumas vezes, esperando um pouco mais a cada
+    rodada, antes de desistir de verdade.
+    """
+    bruto = None
+    for tentativa in range(1, tentativas + 1):
+        try:
+            req = urllib.request.Request(url, headers={
+                "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                               "AppleWebKit/537.36 (KHTML, like Gecko) "
+                               "Chrome/124.0.0.0 Safari/537.36"),
+                "Accept": "image/avif,image/webp,image/*,*/*;q=0.8",
+            })
+            with urllib.request.urlopen(req, timeout=60) as r:
+                bruto = r.read()
+            break
+        except Exception as e:
+            if tentativa == tentativas:
+                print(f"    aviso: nao consegui baixar a foto depois de "
+                      f"{tentativas} tentativas ({e})")
+                return False
+            espera = 2 * tentativa
+            print(f"    tentativa {tentativa} falhou ({e}), repetindo em {espera}s")
+            time.sleep(espera)
+
+    if not bruto:
         return False
 
     temp = destino.with_suffix(".original")
@@ -259,6 +278,8 @@ def montar():
                 registro["foto"] = f"img/{arquivo.name}"
             else:
                 sem_foto.append(nome)
+            # respira entre um download e outro para nao irritar o servidor
+            time.sleep(0.4)
         else:
             sem_foto.append(nome)
 

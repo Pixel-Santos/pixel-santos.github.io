@@ -40,3 +40,18 @@ substituicao falhou calada por causa de um erro meu na palavra veneravel, e
 o texto ficou com uma frase duplicada.
 REGRA: depois de qualquer chamada com mais de uma substituicao, conferir a
 pagina com notion-fetch antes de marcar como pronta.
+
+## Fotos que sumiam sem motivo aparente, 06/08
+Seis santos ficaram sem foto no site mesmo tendo link valido no Notion:
+Rosario Livatino, Marie-Clementine, Antonietta Meo, Papa Joao Paulo I,
+Pier Giorgio Frassati e Gemma Galgani.
+
+Nao era link quebrado. Testado na mao, o link do Livatino baixa 200 OK com
+70 KB e o sips comprime sem erro. A causa era o build.py nao ter NENHUMA
+repeticao de tentativa: uma falha momentanea de rede, ou o limite de taxa
+do Wikimedia ao baixar 86 imagens em sequencia, derrubava a foto daquele
+santo para sempre naquela geracao.
+
+Corrigido com quatro tentativas e espera crescente, mais uma pausa de 0,4s
+entre downloads. Como o efeito e aleatorio, os santos afetados mudam a cada
+geracao, o que explica por que a lista de hoje e diferente da de 30/07.
