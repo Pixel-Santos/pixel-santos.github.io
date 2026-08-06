@@ -26,6 +26,10 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
+    # o if de um passo nao enxerga secrets, mas enxerga env.
+    # por isso o segredo e copiado para ca antes de ser testado.
+    env:
+      NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -41,13 +45,11 @@ jobs:
       # Se a chave do Notion ainda nao foi cadastrada, este passo e pulado
       # e o site e publicado do jeito que ja esta guardado aqui.
       - name: Gerar o site a partir do Notion
-        if: ${{ secrets.NOTION_TOKEN != '' }}
-        env:
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        if: ${{ env.NOTION_TOKEN != '' }}
         run: python3 build.py
 
       - name: Guardar o que mudou
-        if: ${{ secrets.NOTION_TOKEN != '' }}
+        if: ${{ env.NOTION_TOKEN != '' }}
         run: |
           git config user.name "Pixel Santo bot"
           git config user.email "actions@github.com"
