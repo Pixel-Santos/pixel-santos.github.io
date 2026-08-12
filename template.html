@@ -1,4 +1,5 @@
 <title>pixel.santo · catálogo de santos modernos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="Um catálogo de santos, beatos, veneráveis e servos de Deus do nosso tempo." />
 
 <style>
@@ -608,6 +609,14 @@
 
   footer strong { color: var(--ink-soft); }
 
+  .footer-atualizado {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.74rem;
+    color: var(--ink-faint);
+    font-style: italic;
+  }
+
   /* ---------- Overlay / detail ---------- */
   .overlay {
     position: fixed;
@@ -696,6 +705,7 @@
   .sheet-close {
     position: absolute;
     top: 14px; right: 14px;
+    z-index: 2;
     background: var(--bg-card);
     border: 1px solid var(--line);
     border-radius: 2px;
@@ -768,6 +778,41 @@
 
   @media (prefers-reduced-motion: reduce) {
     .card, .sheet, .overlay { transition: none; }
+  }
+
+  /* ---------- Mobile tweaks ---------- */
+  @media (max-width: 640px) {
+    .wrap { padding: 0 16px; }
+    .topbar { padding: 16px 16px; flex-wrap: wrap; gap: 6px 14px; }
+    .topbar-note { font-size: 0.7rem; }
+
+    .hero { padding: 8px 0 4px; }
+    h1 { font-size: 2rem; line-height: 1.05; margin-bottom: 14px; }
+    .hero-lede { font-size: 0.95rem; }
+    .hero-stats { gap: 20px; margin-bottom: 20px; }
+
+    .section-title { font-size: 1.4rem; }
+    .section-kicker { font-size: 0.7rem; }
+
+    .prose { font-size: 0.95rem; }
+    .prose-lead::first-letter { font-size: 3rem; }
+
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .card-body { padding: 12px; gap: 6px; }
+    .card-name { font-size: 0.98rem; }
+    .card-years { font-size: 0.7rem; }
+    .card-meta { font-size: 0.72rem; }
+
+    .sort-row { flex-wrap: wrap; gap: 8px; }
+
+    .marquee-band { padding: 14px 0; }
+
+    .sheet { max-width: 100%; margin: 10px; border-radius: 2px; }
+    .sheet-image { height: clamp(220px, 40vh, 340px); }
+    .sheet-content { padding: 20px 18px 22px; }
+    .sheet-name { font-size: 1.55rem; }
+    .sheet-sub { font-size: 0.78rem; }
+    .bio { font-size: 0.92rem; }
   }
 </style>
 

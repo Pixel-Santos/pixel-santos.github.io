@@ -22,7 +22,18 @@ import sys
 import unicodedata
 import urllib.error
 import urllib.request
+from datetime import date
 from pathlib import Path
+
+MESES_PT = [
+    "janeiro", "fevereiro", "março", "abril", "maio", "junho",
+    "julho", "agosto", "setembro", "outubro", "novembro", "dezembro",
+]
+
+
+def data_hoje_pt():
+    hoje = date.today()
+    return f"{hoje.day} de {MESES_PT[hoje.month - 1]} de {hoje.year}"
 
 # ---------------------------------------------------------------- configuracao
 
@@ -206,6 +217,8 @@ def baixar_foto(url, destino, tentativas=4):
                                "AppleWebKit/537.36 (KHTML, like Gecko) "
                                "Chrome/124.0.0.0 Safari/537.36"),
                 "Accept": "image/avif,image/webp,image/*,*/*;q=0.8",
+                "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+                "Referer": "https://en.wikipedia.org/",
             })
             with urllib.request.urlopen(req, timeout=60) as r:
                 bruto = r.read()
@@ -298,6 +311,7 @@ def escrever_html(santos):
         f"<strong>Sobre o catálogo.</strong> {len(santos)} santos, beatos, veneráveis e "
         f"servos de Deus catalogados, {com_foto} com foto. Os locais de nascimento e "
         f"sepultamento aparecem no mapa quando estão preenchidos no catálogo."
+        f"<br><span class=\"footer-atualizado\">Informações atualizadas em {data_hoje_pt()}.</span>"
     )
 
     html = html.replace("/*__SAINTS_DATA__*/[]",
